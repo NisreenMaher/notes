@@ -4,7 +4,7 @@
 
  <div class="row">
      <div class="col-md-9 offset-md-2">
-         <h3>Create Post Form</h3>
+         <h3>Create Note :)</h3>
          <hr>
          <form action="/posts" method="POST">
 

@@ -76,7 +76,7 @@ class PostsController extends Controller
 
         $post->save();
 
-        return redirect('/posts')->with('status', 'Post was updated !');
+        return redirect('/posts')->with('status', 'Note was updated !');
 
     }
 
@@ -85,7 +85,7 @@ class PostsController extends Controller
 
         $post = POST::find($id) ;
         $post->delete();
-        return redirect('/posts')->with('status', 'Post was deleted !');
+        return redirect('/posts')->with('status', 'Note was deleted !');
 
     }
 

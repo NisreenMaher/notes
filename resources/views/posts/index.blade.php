@@ -1,7 +1,9 @@
 @extends('layouts.master')
 
 @section('content')
-    <h2> List of all Notes</h2>
+
+    <h2>    <img src="{!! asset('icon.png') !!}"> List of all Notes </h2>
+
     <hr>
     <div class="row">
         <div class="col-md-9">
@@ -23,7 +25,7 @@
                             <tr>
                                 <td >    <small class="text-muted"> <p> {{$post->created_at->format('Y-m-d')}}</p></small></td>
 
-                                <td> {{$post->id}}</td>
+                                <td> {{$post->title}}</td>
                                 <td>  {{$post->body}}</td>
                                 <td>    <a href="{{ '/posts/' . $post->id . '/edit'}}" class="btn btn-primary float-left mr-2"> Edit</a>
                                     <form action="{{route('posts.destroy', ['id' => $post->id])}}" method="POST">
@@ -47,10 +49,10 @@
 
         <div class="col-md-3">
             <div class="card ml-3" style="max-width: 10rem;">
-                <div class="card-header bg-info text-white"> Stats.</div>
+                <div class="card-header bg-info text-white" > Stats.</div>
                 <div class="card-body">
 
-                    <p class="card-text"> All Posts: {{$count}}</p>
+                    <p class="card-text"> All Notes: {{$count}}</p>
                 </div>
             </div>
         </div>

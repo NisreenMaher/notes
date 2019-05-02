@@ -10474,6 +10474,7 @@ a.text-dark:focus {
 
 table {
     width:100%;
+
 }
 table, th, td {
     border: 1px solid black;
@@ -10490,6 +10491,7 @@ table#t01 tr:nth-child(odd) {
     background-color: #fff;
 }
 table#t01 th {
-    background-color: black;
-    color: white;
+    background-color: #ffe70a;
+    color: black;
 }
+
