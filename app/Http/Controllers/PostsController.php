@@ -47,7 +47,7 @@ class PostsController extends Controller
 
         $post->save();
 
-        return redirect('/posts')->with('status', 'Post was created !');
+        return redirect('/posts')->with('status', 'Note was created !');
 
         
     }
